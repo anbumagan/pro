@@ -19,4 +19,4 @@ op=[]
 for i in range(len(l)-1):
     op.append(compare(l[i],l[i+1]))
     i=i+1
-print(set(op))
+print(*set(op))
