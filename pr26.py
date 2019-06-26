@@ -1,11 +1,20 @@
-a1=int(input())
-b=list(map(int,input().split()))
+t1=int(input())
+s=list(map(int,input().split()))
+
 c=[]
-max=0
-for i in b:
-    if(i not in c):
-        c.append(i)
-for i in range(len(c)-1):
-    if(c[i]<c[i+1]):
-        max=max+1
-print(max)
+
+n=1
+
+for i in s:
+
+  if i not in c:
+
+    c.append(i)
+
+for i in range(0,len(c)-1):
+
+  if c[i]<c[i+1]:
+
+    n+=1
+
+print(n)
