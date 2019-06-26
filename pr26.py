@@ -1,10 +1,11 @@
-a=int(input())
+a1=int(input())
 b=list(map(int,input().split()))
-c=1
-ma=0
-for i in range(len(b)-1):
-    if(b[i]<=b[i+1]):
-        c=c+1
-    elif(c>ma):
-        ma=c
-print(ma)
+c=[]
+max=0
+for i in b:
+    if(i not in c):
+        c.append(i)
+for i in range(len(c)-1):
+    if(c[i]<c[i+1]):
+        max=max+1
+print(max)
