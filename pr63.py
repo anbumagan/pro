@@ -1,6 +1,6 @@
-q=input()
+s=input()
 l1=[]
-l=len(q)
+l=len(s)
 count=0
 for i in range(l):
 	if s[i] not in l1 and count==0:
